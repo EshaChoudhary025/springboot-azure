@@ -1,0 +1,21 @@
+# Database connection properties
+spring:
+  datasource:
+    url: jdbc:sqlserver://myserver011.database.windows.net:1433;database=mydb;user=esha@myserver011;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: esha
+    password: Ahappysoul25!
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+# Hibernate properties (optional)
+
+  jpa:
+    dialect: org.hibernate.dialect.SQLServer2012Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9191
+
+
+
